@@ -245,8 +245,13 @@ def plot_mask2(arg_data,rle_defect, k):
 
 # Bootstrap themes by Ann: https://hellodash.pythonanywhere.com/theme_explorer
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.LUX])
-
+app.title = 'SteelDefectDection'
 app.layout = dbc.Container([
+    # dbc.Row([
+    #         dbc.Col([
+    #             dbc.Card([dbc.CardImg(src='/asset/SteelDefect.png')]),
+    #                 ]),
+    #         ]),
     dbc.Row([
         dbc.Col([
             dbc.Card([
